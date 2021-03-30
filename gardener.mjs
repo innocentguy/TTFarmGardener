@@ -45,7 +45,9 @@ async function main() {
   }, 5000);
 }
 
-console.log("Initialize the worker, it will activate every 00:00");
+console.log(
+  "Initialize the worker, it will activate 0 minute after every hour"
+);
 cron.schedule("0 * * * *", async () => {
   console.log(`Animal Id: ${petId}`);
   console.log(`[${Date.now()}] Start collecting TT`);
