@@ -42,7 +42,7 @@ async function main() {
     } else {
       console.log("Failed Collect TT");
     }
-  }, 2000);
+  }, 5000);
 }
 
 console.log("Initialize the worker, it will activate every 00:00");
